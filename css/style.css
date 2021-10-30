@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  text-indent: 50px;
+}
+
 .container h4 {
   font-size: 14px;
   font-weight: bold;
@@ -26,7 +30,7 @@ a {
 /*Medsos*/
 .medsos {
   padding: 5px 0;
-  background-color: #0e4eda;
+  background-color: #f7f7f7;
 }
 .medsos ul li {
   display: inline-block;
@@ -38,7 +42,7 @@ a {
   margin: 10px auto;
 }
 .medsos ul li a i {
-  color: #fff;
+  color: #0e4eda;
   float: right;
   padding: 15px auto;
 }
@@ -79,41 +83,30 @@ header ul li a:hover {
 }
 
 /*Slider*/
-.carousel-indicators {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.radio {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0.2em;
-  margin: 1em 0.5em 0 0;
-  cursor: pointer;
-  text-align: center;
-  border-radius: 60px;
-  border: 2px solid #fff;
-}
-
-.radio.active {
-  background: #fff;
-}
-
-.carousel-inner {
-  display: block;
-  height: 450px;
-  line-height: 1;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-.carousel-item img {
-  height: 60vh;
-  background-size: cover;
+.carousel-item {
+  height: 32rem;
+  background: #0e4eda;
+  color: white;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+.carousel .container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+.d-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
 }
 
 /*Banner*/
