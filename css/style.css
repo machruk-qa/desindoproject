@@ -1,21 +1,18 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 a {
   color: inherit;
   text-decoration: none;
 }
-.medsos {
-  padding: 5px 0;
-  background-color: #0e4eda;
+
+.container h4 {
+  font-size: 14px;
+  font-weight: bold;
 }
-.medsos ul li {
-  display: inline-block;
-  color: #fff;
-  margin-right: 10px;
-}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -26,12 +23,143 @@ a {
   clear: both;
 }
 
-.img-logo {
-  width: 165px;
+/*Medsos*/
+.medsos {
+  padding: 5px 0;
+  background-color: #0e4eda;
+}
+.medsos ul li {
+  display: inline-block;
+  float: right;
+  width: 30px;
+  color: #fff;
+  width: 50px;
   height: auto;
-  padding: 15px 0;
+  margin: 10px auto;
+}
+.medsos ul li a i {
+  color: #fff;
+  float: right;
+  padding: 15px auto;
+}
+.medsos ul li :hover {
+  color: #da1c0e;
 }
 
+/*Logo*/
+.img-logo {
+  width: 190px;
+  height: auto;
+  padding: 15px 0;
+  float: left;
+  margin-left: 3px;
+}
+
+/*NavBar*/
+header h1 {
+  float: left;
+  padding: 15px 0;
+  color: #0e4eda;
+}
+header ul {
+  float: right;
+}
+header ul li {
+  display: inline-block;
+}
+header ul li a {
+  padding: 25px 20px;
+  display: inline-block;
+  color: #0e4eda;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: #da1c0e;
+}
+
+/*Slider*/
+.carousel-indicators {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.radio {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0.2em;
+  margin: 1em 0.5em 0 0;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 60px;
+  border: 2px solid #fff;
+}
+
+.radio.active {
+  background: #fff;
+}
+
+.carousel-inner {
+  display: block;
+  height: 450px;
+  line-height: 1;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.carousel-item img {
+  height: 60vh;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Banner*/
+.banner {
+  height: 60vh;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(14, 79, 218, 0.466);
+}
+.banner h2 {
+  color: #fff;
+  z-index: 1;
+  padding: 20px 25px;
+  border: 3px solid #fff;
+}
+
+/*Service*/
+.icon {
+  width: 70px;
+  height: 70px;
+  border: 1px solid;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.icon :hover {
+  color: #da1c0e;
+}
+
+/*Gallery*/
 .gallery {
   margin: 0 0.65rem;
 }
@@ -93,61 +221,16 @@ a {
   }
 }
 
-header h1 {
-  float: left;
-  padding: 15px 0;
-  color: #0e4eda;
-}
-header ul {
-  float: right;
-}
-header ul li {
-  display: inline-block;
-}
-header ul li a {
-  padding: 25px 20px;
-  display: inline-block;
-  color: #0e4eda;
-}
-
-header ul li a:hover {
-  color: #da1c0e;
-}
-
-.banner {
-  height: 60vh;
-  background-image: url("../img/banner.jpg");
-  background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.banner:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(14, 79, 218, 0.466);
-}
-.banner h2 {
-  color: #fff;
-  z-index: 1;
-  padding: 20px 25px;
-  border: 3px solid #fff;
-}
-
 section {
   padding: 50px 0;
 }
 section h3 {
   text-align: center;
   padding: 20px 0;
-  color: #0e4eda;
+  color: #da370e;
   margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 section p {
@@ -162,6 +245,7 @@ section p {
   color: #0e4eda;
 }
 
+/*Embed*/
 .embedded-video-large {
   background-color: #000;
   background-position: center;
@@ -211,6 +295,9 @@ section p {
 .box {
   color: #0e4eda;
 }
+.box :hover {
+  color: #da1c0e;
+}
 .box:after {
   content: "";
   display: block;
@@ -223,16 +310,7 @@ section p {
   text-align: center;
   float: left;
 }
-.icon {
-  width: 70px;
-  height: 70px;
-  border: 1px solid;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 70px;
-  font-size: 20px;
-  margin: 0 auto;
-}
+
 .box .col-4 h4 {
   margin: 20px 0;
 }
@@ -268,6 +346,8 @@ footer {
   border-bottom-color: #0e4eda;
   animation: puterin 0.8s linear infinite;
 }
+
+/*Label*/
 .label p {
   color: #fff;
   padding: 1px 1;
