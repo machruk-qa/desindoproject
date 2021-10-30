@@ -9,7 +9,7 @@ a {
 }
 .medsos {
   padding: 5px 0;
-  background-color: #0c94e2;
+  background-color: #0e4eda;
 }
 .medsos ul li {
   display: inline-block;
@@ -29,6 +29,7 @@ a {
 .img-logo {
   width: 165px;
   height: auto;
+  padding: 15px 0;
 }
 
 .gallery {
@@ -95,7 +96,7 @@ a {
 header h1 {
   float: left;
   padding: 15px 0;
-  color: #0c94e2;
+  color: #0e4eda;
 }
 header ul {
   float: right;
@@ -106,7 +107,11 @@ header ul li {
 header ul li a {
   padding: 25px 20px;
   display: inline-block;
-  color: #0c94e2;
+  color: #0e4eda;
+}
+
+header ul li a:hover {
+  color: #da1c0e;
 }
 
 .banner {
@@ -126,7 +131,7 @@ header ul li a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(12, 148, 226, 0.493);
+  background-color: rgba(14, 79, 218, 0.466);
 }
 .banner h2 {
   color: #fff;
@@ -141,7 +146,7 @@ section {
 section h3 {
   text-align: center;
   padding: 20px 0;
-  color: #0c94e2;
+  color: #0e4eda;
   margin-bottom: 25px;
 }
 
@@ -154,7 +159,7 @@ section p {
   margin: 0;
   font-weight: inherit;
   margin-bottom: 25px;
-  color: #0c94e2;
+  color: #0e4eda;
 }
 
 .embedded-video-large {
@@ -204,7 +209,7 @@ section p {
   background-color: #f9f9f9;
 }
 .box {
-  color: #0c94e2;
+  color: #0e4eda;
 }
 .box:after {
   content: "";
@@ -237,7 +242,7 @@ section p {
 
 footer {
   padding: 30px 0;
-  background-color: #0c94e2;
+  background-color: #0e4eda;
   color: #fff;
   text-align: center;
 }
@@ -258,9 +263,9 @@ footer {
   height: 100px;
   border: 3px solid #fff;
   border-radius: 50%;
-  border-top-color: #0c94e2;
-  border-right-color: #0c94e2;
-  border-bottom-color: #0c94e2;
+  border-top-color: #0e4eda;
+  border-right-color: #0e4eda;
+  border-bottom-color: #0e4eda;
   animation: puterin 0.8s linear infinite;
 }
 .label p {
@@ -270,7 +275,7 @@ footer {
   font-style: italic;
 }
 .label {
-  background-color: #0c94e2;
+  background-color: #0e4eda;
   color: #fff;
   padding: 8px 0;
 }
