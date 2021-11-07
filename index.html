@@ -2,17 +2,485 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PT DESINDO JAYA UTAMA</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+     <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .medsos {
+        padding: 0px 0px;
+        background-color: #e4e4e4;
+      }
+
+      .medsos ul li {
+        display: inline-block;
+        padding: 10px;
+        align-items: center;
+      }
+
+      .medsos ul li a i {
+        color: #0e4eda;
+        float: right;
+      }
+
+      .medsos ul li :hover {
+        color: #da1c0e;
+      }
+
+      .img-logo {
+        width: 160px;
+        display: inline-block;
+      }
+
+      .navbar-nav a {
+        font-size: 18px;
+        text-transform: uppercase;
+        float: right;
+        color: #0e4eda;
+      }
+
+      footer {
+        padding: 30px 0;
+        background-color: #0e4eda;
+        color: #fff;
+        text-align: center;
+      }
+
+      .carousel-item {
+        height: 25rem;
+        background: #0e4eda;
+        color: white;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .carousel-indicators {
+        bottom: 60px;
+        margin: auto;
+      }
+
+      .carousel-caption {
+        bottom: 70px;
+      }
+
+      .carousel-caption h3 {
+        font-size: 2rem;
+      }
+
+      .carousel-caption h6 {
+        margin: auto;
+        font-size: 1rem;
+        line-height: normal;
+      }
+
+      .carousel-control-prev .carousel-control-prev-icon {
+        background-color: #f80707;
+      }
+
+      .carousel-control-next .carousel-control-next-icon {
+        background-color: #f50404;
+      }
+
+      @media (min-width: 1306px) {
+        .carousel-caption h3 {
+          font-size: 2rem;
+        }
+
+        .carousel-caption h6 {
+          margin: auto;
+          font-size: 1rem;
+          line-height: normal;
+        }
+
+        .carousel-item {
+          height: 30rem;
+          background: #0e4eda;
+          color: white;
+          position: relative;
+          background-position: center;
+          background-size: cover;
+        }
+
+        .carousel-inner {
+          width: 100%;
+          max-height: auto !important;
+        }
+
+        .carousel-indicators {
+          bottom: 50px;
+          margin: auto;
+        }
+
+        .carousel-caption {
+          bottom: 60px;
+        }
+
+        .box .col-md-6 {
+          width: 25%;
+          padding: 20px;
+          box-sizing: border-box;
+          text-align: center;
+          float: center;
+        }
+
+        h4 {
+          margin: 20px 0;
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 1306px) {
+        .carousel-caption h3 {
+          font-size: 2rem;
+        }
+
+        .carousel-caption h6 {
+          margin: auto;
+          font-size: 1rem;
+          line-height: normal;
+        }
+
+        .carousel-item {
+          height: 30rem;
+          background: #0e4eda;
+          color: white;
+          position: relative;
+          background-position: center;
+          background-size: cover;
+        }
+
+        .carousel-inner {
+          width: 100%;
+          max-height: auto !important;
+        }
+
+        .carousel-indicators {
+          bottom: 50px;
+          margin: auto;
+        }
+
+        .carousel-caption {
+          bottom: 60px;
+        }
+
+        .box .col-md-6 {
+          width: 25%;
+          padding: 20px;
+          box-sizing: border-box;
+          text-align: center;
+          float: center;
+        }
+
+        h4 {
+          margin: 20px 0;
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+
+      @media (min-width: 715px) and (max-width: 992px) {
+        .carousel-caption h3 {
+          font-size: 2rem;
+        }
+
+        .carousel-caption h6 {
+          margin: auto;
+          font-size: 1rem;
+          line-height: normal;
+        }
+
+        .carousel-item {
+          height: 30rem;
+          background: #0e4eda;
+          color: white;
+          position: relative;
+          background-position: center;
+          background-size: cover;
+        }
+
+        .carousel-inner {
+          width: 100%;
+          max-height: 380px !important;
+        }
+
+        .carousel-indicators {
+          bottom: 30px;
+          margin: auto;
+        }
+
+        .carousel-caption {
+          bottom: 130px;
+        }
+
+        .box .col-md-6 {
+          width: 25%;
+          padding: 20px;
+          box-sizing: border-box;
+          text-align: center;
+          float: center;
+        }
+
+        h4 {
+          margin: 20px 0;
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+
+      @media (min-width: 501px) and (max-width: 714px) {
+        .carousel-caption h3 {
+          font-size: 1rem;
+        }
+
+        .carousel-caption h6 {
+          margin: auto;
+          font-size: 0.7rem;
+          line-height: normal;
+        }
+
+        .carousel-item {
+          height: 30rem;
+          background: #0e4eda;
+          color: white;
+          position: relative;
+          background-position: center;
+          background-size: cover;
+        }
+
+        .carousel-inner {
+          width: 100%;
+          max-height: 280px !important;
+        }
+
+        .carousel-indicators {
+          bottom: 20px;
+          margin: auto;
+        }
+
+        .carousel-caption {
+          bottom: 220px;
+        }
+
+        .box .col-md-6 {
+          width: 25%;
+          padding: 20px;
+          box-sizing: border-box;
+          text-align: center;
+          float: center;
+        }
+
+        h4 {
+          margin: 20px 0;
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .carousel-caption h3 {
+          font-size: 1rem;
+        }
+
+        .carousel-caption h6 {
+          margin: auto;
+          font-size: 0.7rem;
+          line-height: normal;
+        }
+
+        .carousel-item {
+          height: 30rem;
+          background: #0e4eda;
+          color: white;
+          position: relative;
+          background-position: center;
+          background-size: cover;
+        }
+
+        .carousel-inner {
+          width: 100%;
+          max-height: 210px !important;
+        }
+
+        .carousel-indicators {
+          bottom: 10px;
+          margin: auto;
+        }
+
+        .carousel-caption {
+          bottom: 280px;
+        }
+
+        .box .col-md-6 {
+          width: 50%;
+          padding: 20px;
+          box-sizing: border-box;
+          text-align: center;
+          float: center;
+        }
+
+        h4 {
+          margin: 20px 0;
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 399px) {
+        .carousel-caption h3 {
+          font-size: 0.7rem;
+        }
+
+        .carousel-caption h6 {
+          margin: auto;
+          font-size: 0.5rem;
+          line-height: normal;
+        }
+
+        .carousel-item {
+          height: 30rem;
+          background: #0e4eda;
+          color: white;
+          position: relative;
+          background-position: center;
+          background-size: cover;
+        }
+
+        .carousel-inner {
+          width: 100%;
+          max-height: 160px !important;
+        }
+
+        .carousel-indicators {
+          bottom: 10px;
+          margin: auto;
+        }
+
+        .carousel-caption {
+          bottom: 330px;
+        }
+
+        .box .col-md-6 {
+          width: 50%;
+          padding: 20px;
+          box-sizing: border-box;
+          text-align: center;
+          float: center;
+        }
+      }
+
+      section {
+        padding: 30px 0;
+      }
+
+      section h3 {
+        text-align: center;
+        padding: 20px 0;
+        color: #da370e;
+        margin-bottom: 25px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      section p {
+        padding: 0;
+        outline: 0;
+        font-size: 100%;
+        font-style: inherit;
+        font-family: inherit;
+        text-align: justify;
+        margin: 0;
+        font-weight: inherit;
+        margin-bottom: 25px;
+        color: #0e4eda;
+      }
+
+      /*Service*/
+      .icon {
+        width: 70px;
+        height: 70px;
+        border: 1px solid;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 70px;
+        font-size: 20px;
+        margin: 0 auto;
+      }
+
+      .icon :hover {
+        color: #da1c0e;
+      }
+
+      .about,
+      .service {
+        padding-bottom: 100px;
+      }
+
+      .about p {
+        color: #666;
+        word-spacing: 2px;
+        line-height: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .service {
+        background-color: #f9f9f9;
+      }
+
+      .box {
+        color: #0e4eda;
+      }
+
+      .box :hover {
+        color: #da1c0e;
+      }
+
+      .box:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .navbar-light .navbar-nav .nav-link {
+        color: #0e4eda;
+      }
+
+      .nav-link.active,
+      .nav-link:focus {
+        color: #0e4eda;
+      }
+
+      .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+      }
+
+      @media only screen and (max-width: 767px) {
+        .navbar-nav.ml-auto {
+          background: rgba(241, 238, 238, 0.301);
+        }
+
+        .navbar-nav a {
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+    </style>
   </head>
-  
+
   <body>
     <!-- loader -->
     <div class="bg-loader">
@@ -20,33 +488,55 @@
     </div>
 
     <!-- medsos -->
-    <div class="medsos">
-        <ul>
-          <li>
-            <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
-          </li>
-        </ul>
-    </div>
-
-    <!-- header -->
-    <header>
-        <div class="container">
-          <img class="img-logo" src="img/logo1.png" alt="logo" />
-            <ul>
-              <li class="active"><a href="index.html">HOME</a></li>
-              <li><a href="service.html">SERVICE</a></li>
-              <li><a href="gallery.html">PORTOFOLIO</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
-            </ul>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="medsos">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook fa-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram fa-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-youtube fa-lg"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-    </header>
-
+      </div>
+    </div>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <img class="img-logo" src="img/logo1.png" alt="logo" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">PORTOFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Carousel-->
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -55,24 +545,24 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-interval="2000">
-          <img src="./img/Gallery/gallery5.jpg" class="d-block w-100" alt="slide1">
-          <div class="carousel-caption d-none d-md-block">
+          <img src="./img/Gallery/gallery16.jpg" class="d-block w-100" alt="slide1" />
+          <div class="carousel-caption d-md-block">
             <h3>Ahli dan Berpengalaman</h3>
-            <p>Kami adalah kontraktor dengan pengalaman berbagai projek sederhana maupun kompleks, dari pengalaman itu membuat kami menjadi kontraktor yang bisa diandalkan diberbagai pekerjaan.</p>
+            <h6>Kami adalah kontraktor dengan pengalaman berbagai projek sederhana maupun kompleks, dari pengalaman itu membuat kami menjadi kontraktor yang bisa diandalkan diberbagai pekerjaan.</h6>
           </div>
         </div>
         <div class="carousel-item" data-interval="2000">
-          <img src="./img/Gallery/kontraktor-murah-12.jpg" class="d-block w-100" alt="slide2">
-          <div class="carousel-caption d-none d-md-block">
+          <img src="./img/Gallery/kontraktor-murah-12.jpg" class="d-block w-100" alt="slide2" />
+          <div class="carousel-caption d-md-block">
             <h3>Kontraktor Terpercaya</h3>
-            <p>Kepercayaan klien adalah segalanya bagi kami, karena itu kami selalu berusaha memberikan yang terbaik.</p>
+            <h6>Kepercayaan klien adalah segalanya bagi kami, karena itu kami selalu berusaha memberikan yang terbaik.</h6>
           </div>
         </div>
         <div class="carousel-item" data-interval="2000">
-          <img src="./img/Gallery/slide1.jpg" class="d-block w-100" alt="Slide3">
-          <div class="carousel-caption d-none d-md-block">
+          <img src="./img/Gallery/slide1.jpg" class="d-block w-100" alt="Slide3" />
+          <div class="carousel-caption d-md-block">
             <h3>Jasa Kontraktor Terbaik</h3>
-            <p>Selalu menawarkan jasa kontraktor terbaik dengan memperhatikan apa yang diinginkan serta dibutuhkan oleh klien dan memberikan rasa aman dan nyaman melalui tiga hal: Ketepatan Waktu, Kualitas Pengerjaan dan Transparansi Harga.</p>
+            <h6> Selalu menawarkan jasa kontraktor terbaik dengan memperhatikan apa yang diinginkan serta dibutuhkan oleh klien dan memberikan rasa aman dan nyaman melalui tiga hal: Ketepatan Waktu, Kualitas Pengerjaan dan Transparansi Harga. </h6>
           </div>
         </div>
       </div>
@@ -90,39 +580,48 @@
     <section class="service">
       <div class="container">
         <h3>OUR SERVICES</h3>
-        <div class="box">
-          <div class="col-4">
+        <div class="row box">
+          <div class="col-md-6 col-xs-12">
             <div class="icon">
-              <a href="service.html"><i class="fas fa-plug"></i></a>
+              <a href="service.html">
+                <i class="fas fa-plug"></i>
+              </a>
             </div>
             <h4>ELECTRICAL</h4>
           </div>
-          <div class="col-4">
-            <div class="icon"><a href="service.html"><i class="fas fa-cogs"></i></a></i></div>
+          <div class="col-md-6 col-xs-12">
+            <div class="icon">
+              <a href="service.html">
+                <i class="fas fa-cogs"></i>
+              </a>
+              </i>
+            </div>
             <h4>MECHANICAL</h4>
           </div>
-          <div class="col-4">
-            <div class="icon"><a href="service.html"><i class="fas fa-cubes"></i></a></div>
+          <div class="col-md-6 col-xs-12">
+            <div class="icon">
+              <a href="service.html">
+                <i class="fas fa-cubes"></i>
+              </a>
+            </div>
             <h4>FLOORING</h4>
           </div>
-          <div class="col-4">
-            <div class="icon"><a href="service.html"><i class="fas fa-campground"></i></a></div>
+          <div class="col-md-6 col-xs-12">
+            <div class="icon">
+              <a href="service.html">
+                <i class="fas fa-campground"></i>
+              </a>
+            </div>
             <h4>ROOFING</h4>
           </div>
         </div>
       </div>
     </section>
-
+    <!-- About -->
     <section>
       <div class="container">
         <h3>ABOUT US</h3>
-        <p class="about">
-          Desindo Jaya Utama berkembang dibidang jasa design dan konstruksi, terdiri dari design arsitektur, design interior, perencanaan struktur, serta pembuatan bangunan. Kami sebagai kontraktor mengerjakan proyek-proyek konstruksi
-          dengan tepat waktu sesuai time schedule, standar kualitas yang kami berikan adalah yang terbaik.
-
-          Kualitas dan jasa kami terjamin karena kami menggunakan SOP (Standard Operational Procedure) yang professional. Design sesuai dengan keinginan dan budget yang klien tentukan. Tenaga kerja yang berpengalaman, handal, dan juga
-          terampil agar terciptanya pekerjaan yang efektif dan efisien.
-        </p>
+        <p class="about"> Desindo Jaya Utama berkembang dibidang jasa design dan konstruksi, terdiri dari design arsitektur, design interior, perencanaan struktur, serta pembuatan bangunan. Kami sebagai kontraktor mengerjakan proyek-proyek konstruksi dengan tepat waktu sesuai time schedule, standar kualitas yang kami berikan adalah yang terbaik. Kualitas dan jasa kami terjamin karena kami menggunakan SOP (Standard Operational Procedure) yang professional. Design sesuai dengan keinginan dan budget yang klien tentukan. Tenaga kerja yang berpengalaman, handal, dan juga terampil agar terciptanya pekerjaan yang efektif dan efisien. </p>
       </div>
     </section>
 
@@ -132,14 +631,16 @@
         <small>Copyright &copy; 2021 - PT Desindo Jaya Utama. All Rights Reserved.</small>
       </div>
     </footer>
-
+    
     <script type="text/javascript">
-      $(document).ready(function () {
+      $(document).ready(function() {
         $(".bg-loader").hide();
       });
     </script>
-
-   <!-- Option 1: Bootstrap Bundle with Popper -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
   </body>
 </html>
