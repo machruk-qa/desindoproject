@@ -6,10 +6,10 @@
     <title>PT DESINDO JAYA UTAMA</title>
     <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <style>
       * {
@@ -239,6 +239,15 @@
           font-size: 18px;
           text-align: center;
         }
+
+        .responsive {
+        width: 100%;
+        position: relative;
+        }
+
+        .responsive iframe{
+        width: 100%;
+        }
       }
 
       @media (min-width: 501px) and (max-width: 714px) {
@@ -287,6 +296,15 @@
           margin: 20px 0;
           font-size: 16px;
           text-align: center;
+        }
+
+        .responsive {
+        width: 100%;
+        position: relative;
+        }
+
+        .responsive iframe{
+        width: 100%;
         }
       }
 
@@ -337,6 +355,16 @@
           font-size: 14px;
           text-align: center;
         }
+
+        .responsive {
+        width: 100%;
+        position: relative;
+        }
+
+        .responsive iframe{
+        width: 100%;
+        }
+
       }
 
       @media (max-width: 399px) {
@@ -386,6 +414,12 @@
           font-size: 12px;
           text-align: center;
         }
+
+        .responsive iframe{
+          width: 100%;
+          height: 100%;
+        }
+
       }
 
       section {
@@ -494,7 +528,7 @@
         margin: 0;
         font-style: italic;
       }
-
+      
       .label p a {
         color: #fff;
         padding: 1px 1;
@@ -508,9 +542,31 @@
         color: #fff;
         padding: 8px 0;
       }
-    </style> 
+
+      /*Embed*/
+      .videoyoutube {
+        text-align: center;    
+      }
+
+      .responsive {
+        width: 100%;
+        height: 700;
+        position: relative;
+      }
+
+      .wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 5px;
+      }
+      .img{
+        width: 100%;
+        border-radius: 20px;
+      }
+
+    </style>
   </head>
-  
+
   <body>
     <!-- loader -->
     <div class="bg-loader">
@@ -519,7 +575,7 @@
 
     <!-- medsos -->
     <div class="container-fluid">
-      <div class="row align-item-center">
+      <div class="row">
         <div class="medsos">
           <ul>
             <li>
@@ -570,7 +626,7 @@
     <!-- label -->
     <section class="label">
       <div class="container">
-        <p><a href="index.html">Home</a> / Service</p>
+        <p><a href="index.html">Home</a> / <a href="service.html">Service</a> / Mechanical</p>
       </div>
     </section>
 
@@ -614,6 +670,43 @@
           </div>
         </div>
       </div>
+    </section>
+    
+    <!-- Portofolio -->
+    <section>
+      <div class="container div-gallery-feed">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="title-gallery-feed">Our Mechanical Project</h3>
+          </div>
+        </div>
+
+        <p class="about"> Kami melakukan yang terbaik dalam pengerjaan mekanikal seperti pengerjaan instalasi AC, Instalasi Pipa, instatalsi fasilitas produksi, konstruksi lift juga eskalator, serta penyedia peralatan kerja.
+          PT Desindo Jaya Utama menggunakan metode pengerjaan yang modern, menjadikan pengerjaan mekanikal yang kami lakukan menjadi lebih efisien dan cepat dengan hasil yang teruji.
+         </p>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img src="img/Mechanical/mesin 1.jpg" class="img-thumbnail" alt="foto1">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img src="img/Mechanical/pipe 1.png" class="img-thumbnail" alt="foto2">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img src="img/Mechanical/pipe 2.jpg" class="img-thumbnail" alt="foto3">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img src="img/Mechanical/ac 3.jpg" class="img-thumbnail" alt="foto4">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img src="img/Mechanical/lift 1.webp" class="img-thumbnail" alt="foto5">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img src="img/Mechanical/ac 2.jpg" class="img-thumbnail" alt="foto6">
+        </div>
+      </div>
+
+        
     </section>
 
     <!-- footer -->
